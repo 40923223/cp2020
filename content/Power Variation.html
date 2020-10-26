@@ -133,15 +133,118 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">介紹 << <a href='介紹.html'>Previous</a> <a href='Power Supplies.html'>Next</a> >> Power Supplies<br /><h1>操作程序：電氣安全</h1>
-<p id="N10683" lang=""><span>在美國工作，則應該期望從辦公室或家庭的電源插座接收到115 VAC至120 VAC（交流電壓）的電壓。可以使用簡單的三叉測試儀，電壓表或萬用表進行驗證。程序上，切勿將電線從電線中拉出，因為這會導致電纜損壞和磨損。相反，您應該插入插頭並通過電源線末端的插頭拔出電纜。</span></p>
-<p id="N10686" lang=""><span><span>除了保護自己的安全外，技術人員還需要保護計算機免受電氣損壞。</span><span>通常使用電湧保護器來保護計算機免受電源尖峰或電湧的影響。</span><span>配電盤與電湧保護器不是一回事。</span><span>電湧保護器的額定功率單位為焦耳（J）。</span><span>額定值表示電湧保護器在故障之前可以吸收的焦耳數。</span><span>額定值越高，表示對計算機的保護越高。</span><span>另外，您一定不能使電湧保護器過載，也不能以菊花鏈的方式將它們電擊，也不能將一個電湧保護器插入另一個電湧保護器：這會導致更高的安培數消耗，從而引發火災。</span></span></p>
-<p lang=""><span><span>When working with a computer, the largest amount of voltage you will find is located inside the computer’s power supply unit (PSU). You should <em class="bold" lang="">never<span> </span></em><span>disassemble a PSU; when it is broken, simply replace the entire unit. Power supply units are relatively inexpensive, so it is a best practice to simply replace them. Some technicians wonder why they should not disassemble or open the PSU and try to fix it, but the reason is simple — it is<span> </span></span><em class="bold" lang="">very<span> </span></em><span>dangerous. A PSU has numerous electrical components that allow it to convert the high-voltage 115-120 VAC (or 230-240 VAC) power into the 12 VDC (volts direct current) that is usable by the computer. Some of these components are capacitors, which cause the power supply to retain lots of voltage (up to 10,000 volts or more) even after the computer is turned off and even after the computer and PSU are unplugged. Therefore, if you want to see the inside of a PSU, search for it on the Internet and look at a picture. It is much safer.</span></span></span></p>
-<p id="N106B8" lang=""><span>使用計算機時，您將發現的最大電壓位於計算機的電源設備（PSU）內部。您</span><em class="bold" lang=""><span>切勿<span> </span></span></em><span>拆卸電源設備；損壞時，只需更換整個單元。電源設備價格相對便宜，因此最好是簡單地更換它們。一些技術人員想知道為什麼不應該拆卸或打開PSU並嘗試對其進行修復，但是原因很簡單-它</span><em class="bold" lang=""><span>非常<span> </span></span></em><span>危險的。PSU具有許多電氣組件，可將115-120 VAC（或230-240 VAC）高壓電源轉換為計算機可使用的12 VDC（直流電壓）。這些組件中的一些是電容器，即使在關閉計算機後以及拔下計算機和PSU的電源後，電源也會保持大量電壓（最高10,000伏或更高）。因此，如果要查看PSU的內部，請在Internet上搜索並查看圖片。這更安全。</span></p>
-<p lang=""><span><span><span><span class="imagewrap"><span class="image"><img alt="一台計算機PSU的照片，其中插入了兩根電源線，而兩根電源線則放在旁邊。" class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH02/webcontent/PCH02/image2.png" title="一台計算機PSU的照片，其中插入了兩根電源線，而兩根電源線則放在旁邊。"/></span><span class="caption" lang=""><span><span>計算機電源。</span><span>由</span></span><a href="https://flic.kr/p/gjbU" id="_i_3" lang="" target="_blank"><span><span>cand3la</span></span></a><span><span>根據CC-BY-NC許可使用</span></span></span></span></span></span></span></p>
-<p lang=""><span style="color: #ff0000;"><span class="imagewrap"><span class="caption" lang="">From this chapter, I can know that if you want uninterrupted power supply, you can use ups, and if you can turn on psu, you will be electrocuted. You can use a multimeter to check the voltage and current.</span></span></span></p>
-<p lang=""><span style="color: #ff0000;"><span class="imagewrap"><span class="caption" lang="">從這章我可以知道想要不間斷的供電可以使用ups，還有不可以打開psu 會被電死，可以使用萬用表來檢查電壓和電流</span></span></span></p>
-<br />介紹 << <a href='介紹.html'>Previous</a> <a href='Power Supplies.html'>Next</a> >> Power Supplies</div>
+    <div id="tipue_search_content">Power Supplies << <a href='Power Supplies.html'>Previous</a> <a href='Protecting People and Property.html'>Next</a> >> Protecting People and Property<br /><h1>Power Variation</h1>
+<p><span style="color: #ff0000; background-color: #000000;"></span></p>
+<p id="N1068F" lang="">It is important to understand the technical terms for the various undervoltage and overvoltage conditions that could exist, such as power surge, dirty power, sag, brownout, and blackout, as well as the device that provides protection to the computers and computer system equipment when these conditions occur. A power surge occurs when a short increase in AC voltage happens, such as from 120 VAC to 130 VAC. To protect computers from this condition, you would use a surge suppressor. Dirty power occurs when AC voltage continuously fluctuates, for example between 113 VAC and 130 VAC. To correct this condition, an in-line UPS or line conditioner should be used. A sag occurs when an unexpected short decrease in voltage occurs. This can be corrected with either a line conditioner or a UPS. A brownout is a more significant, larger voltage drop than a sag, and could result in the voltage being cut in half (such as 120 VAC dropping to 60 VAC). This is too much for a line conditioner to handle, so a UPS would be required. Finally, if there is a complete loss of power, this is called a blackout. Only a UPS can solve this problem, but only for a short duration (purportedly about 15 minutes). If operations must continue after this, you would need to switch to a backup generator to provide the power required.</p>
+<div actguid="d87f2d2b0a0001dc32cbf4fc29e54b6c" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2d2b0a0001dc32cbf4fc29e54b6c&amp;userGUID=40923223%40gm.nfu.edu.tw&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch02_lbd05">
+<div class="activityhead">
+<div class="purposeType purposelearnbydoing" title=""><span class="scnReader">learn by doing</span></div>
+</div>
+</div>
+</div>
+<p><span>重要的是要理解可能存在的各種欠壓和過壓條件的技術術語，例如電湧，臟電源，跌落，掉電和停電，以及在以下情況下為計算機和計算機系統設備提供保護的設備：這些情況發生。當交流電壓短暫升高時（例如從120 VAC增加到130 VAC），就會發生電湧。為了保護計算機免受這種情況的影響，應使用電湧抑制器。當交流電壓持續波動時（例如，在113 VAC和130 VAC之間），會產生臟電。要糾正這種情況，應使用串聯式UPS或線路調節器。當電壓出現意外的短時下降時，就會發生下垂。可以使用電源調節器或UPS進行糾正。掉電比下垂更為顯著，更大的電壓降，並且可能導致電壓降低一半（例如120 VAC降至60 VAC）。對於線路調節器來說，這太多了，因此需要UPS。最後，如果完全斷電，則稱為停電。只有UPS可以解決此問題，但只能持續很短的時間（據說大約15分鐘）。如果此後必須繼續操作，則需要切換到備用發電機以提供所需的電源。 通過實踐學習 </span></p>
+<div class="activityhead">
+<div class="purposeType purposedidigetthis" title=""><span class="scnReader">did I get this</span></div>
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch02_digt01">
+<div class="page 482788" id="opch02_digt01">
+<div class="question ddfb" id="482788">
+<div>
+<p id="N10066" lang="">Match the electrical protective measure with the electrical condition it is designed to mitigate.</p>
+<div class="customActivityHolder" data-showinputs="false" height="505" id="custom-482788" layout="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH02/webcontent/pch02_digt01_layout.xml" source="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/webcontent/DragDropWrapper.js" type="javascript" width="550">
+<div>
+<div class="component">
+<table border="0" cellspacing="4" width="100%">
+<tbody>
+<tr>
+<td><em>Electrical Condition</em></td>
+<td><em>Description</em></td>
+<td><em>Protective Measure</em></td>
+</tr>
+<tr>
+<td>Power surge</td>
+<td>
+<div class="target" input_ref="target1">
+<div class="initiator" input_val="drag1">A short increase in AC voltage</div>
+</div>
+</td>
+<td>
+<div class="target" input_ref="target6">
+<div class="initiator" input_val="drag6">Surge suppressor</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>Dirty power</td>
+<td>
+<div class="target" input_ref="target2">
+<div class="initiator" input_val="drag2">When AC voltage continuously fluctuates</div>
+</div>
+</td>
+<td>
+<div class="target" input_ref="target7">
+<div class="initiator" input_val="drag7">Line conditioner or uninterruptible power supply (UPS)</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>Sag</td>
+<td>
+<div class="target" input_ref="target3">
+<div class="initiator" input_val="drag3">An unexpected short decrease in voltage</div>
+</div>
+</td>
+<td>
+<div class="target" input_ref="target8">
+<div class="initiator" input_val="drag8">Line conditioner or uninterruptible power supply (UPS)</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>Brownout</td>
+<td>
+<div class="target" input_ref="target4">
+<div class="initiator" input_val="drag4">Larger voltage drop than a sag</div>
+</div>
+</td>
+<td>
+<div class="target" input_ref="target9">
+<div class="initiator" input_val="drag9">Uninterruptible power supply (UPS)</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>Blackout</td>
+<td>
+<div class="target" input_ref="target5">
+<div class="initiator" input_val="drag5">Total loss of power for extended period of time.</div>
+</div>
+</td>
+<td>
+<div class="target" input_ref="target10">
+<div class="initiator" input_val="drag10">Generator</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="input_source">
+<p></p>
+</div>
+</div>
+</div>
+</div>
+<div class="feedback clearfix ref-target8 correct"><span class="icon"></span>
+<div class="response">Correct. A sag can be corrected with either a line conditioner or an uninterruptible power supply.</div>
+<div class="response"></div>
+<div class="response">
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="en"><span style="color: #ff0000;">I have learned that when the voltage is too high, you can use Langyong to suppress the energy, and when the voltage fluctuates, you can use the line regulator and so on.</span><br/><span style="color: #ff0000;">我了解到電壓過大時可以使用浪勇抑制氣，在電壓波動時要使用線路調節器等等問題可以用上邊來處理<br/><span style="color: #000000;"></span></span></span></pre>
+<br />Power Supplies << <a href='Power Supplies.html'>Previous</a> <a href='Protecting People and Property.html'>Next</a> >> Protecting People and Property</div>
         
     <!-- footer -->
       <div class="container">
