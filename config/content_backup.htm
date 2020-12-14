@@ -255,8 +255,7 @@
 </div>
 <div id="tw-images"><span style="color: #ff0000;">舊型得螢幕不但笨重且不可以打開就算拔插頭很久了會被電死</span></div>
 <div>
-<h2>Internet Connectivity</h2>
-<h2>Overview</h2>
+<h2>Internet Connectivity Overview</h2>
 <p><span>In this module, we will discuss the various types of Internet connectivity for networks. Essentially, this connectivity provides our link to the wide area network (WAN). Each type of connection has benefits and drawbacks, so it is important that you, as a technician, understand which WAN connectivity method you should use in a given scenario. Also, we will cover the basic methods of connecting a small office/home office (SOHO) network, to include wireless devices and connection to the Internet.</span></p>
 </div>
 <div jsaction="iJE3Ge:yuFC7d;DmzWq:nuBux">在本模塊中，我們將討論網絡的各種類型的Internet連接。 本質上，這種連通性提供了我們到廣域網（WAN）的鏈接。 每種類型的連接都有其優點和缺點，因此，作為一名技術人員，了解在給定方案中應使用哪種WAN連接方法非常重要。 此外，我們還將介紹連接小型辦公室/家庭辦公室（SOHO）網絡的基本方法，包括無線設備和與Internet的連接。</div>
@@ -348,10 +347,57 @@
 <p><span><a href="https://www.kaggle.com/leo1217/cp2020-hw2">https://www.kaggle.com/leo1217/cp2020-hw2</a></span></p>
 <h2>二之二</h2>
 <h2>二之三</h2>
-<p><span> </span></p><h1>wh3</h1>
+<p><span> </span></p>
+<h1>wh3</h1>
+<p><span>Write To A File  寫入文件</span></p>
+<p><span><code class="highlighter-rouge">'r'</code><span><span> </span>and<span> </span></span><code class="highlighter-rouge">'w'</code><span>.<span> </span></span><code class="highlighter-rouge">'r'</code><span><span> </span>stands for “read only” and<span> </span></span><code class="highlighter-rouge">'w'</code><span><span> </span>stands for “write only” (you can open for both read and write using<span> </span></span><code class="highlighter-rouge">'r+'</code><span>)</span></span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="Translation" dir="ltr"><span lang="zh-TW">“ r”和“ w”。 “ r”代表“只讀”，“ w”代表“僅寫”,<span>'r+'則是可以寫和讀<br/>open()是函數有兩個參數-第一個是文件作為一個字符串（如果文件不存在，Python將創建它）<br/>並表示第二個參數的名稱<span><span>文件應該如何被打開。</span></span><br/></span></span></pre>
+</div>
+<div jsaction="iJE3Ge:yuFC7d;DmzWq:nuBux">
+<pre><code class="language-python" data-lang="python">  <span class="n">open_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'file_to_save.txt'</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)儲存文件 用寫入的方式</span>
+  <span class="n">open_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">'A string to write'</span><span class="p">)寫入文字到文件</span>
+  <span class="n">open_file</span><span class="o">.</span><span class="n">close</span><span class="p">()把打開的檔案關掉</span></code></pre>
+</div>
+<div jsaction="iJE3Ge:yuFC7d;DmzWq:nuBux">
+<pre></pre>
+Sample solution範例
+<pre>import requests
+from bs4 import BeautifulSoup
+ 
+base_url = 'http://www.nytimes.com'
+r = requests.get(base_url)
+soup = BeautifulSoup(r.text)
+
+filename = input("File to save to: ")
+
+with open(filename, 'w') as f:
+  for story_heading in soup.find_all(class_="story-heading"): 
+      if story_heading.a: 
+          f.write(story_heading.a.text.replace("\n", " ").strip())
+      else: 
+          f.write(story_heading.contents[0].strip())</pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="Translation" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span> </span></span></pre>
 <h1>練習</h1>
 <p><span><a href="https://www.kaggle.com/leo1217/notebook-w2">https://www.kaggle.com/leo1217/notebook-w2</a></span></p>
 <p><span></span></p>
 <p><span> </span></p>
 <p></p>
-<p><span></span></p></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+<p><span></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
