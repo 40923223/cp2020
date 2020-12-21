@@ -214,8 +214,6 @@
 <div class="jhH5U" jsaction="uQxhTd:d4hecb;lWUBqb:TO5MWb;IcWBXe:hLaFAe;KFlBO:UuREqb;M2HAEc:eNrnOd;rcuQ6b:npT2md" jscontroller="geqCid" jsdata="SANFE;;BPYRs4">
 <div class="tw-src-ltr" id="tw-ob">
 <div class="oSioSc">
-<div id="tw-target">
-<div class="g9WsWb" id="kAz1tf">
 <div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-text-container" tabindex="0">
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="Translation" dir="ltr" id="tw-target-text"><span lang="en">This chapter tells me the importance of cables</span></pre>
 </div>
@@ -337,15 +335,21 @@
 <div class="youtube" id="uwrap__i_0"><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" enablejsapi="1" frameborder="0" height="360" id="_i_0" src="https://www.youtube.com/embed/vPlm2ETkgmc?enablejsapi=1&amp;rel=0&amp;vq=large" width="640"></iframe></div>
 </div>
 <h1>wh2</h1>
-<h2 class="iYB33c" jsname="fek9E">二之一</h2>
+<br/>
+<h2>二之一</h2>
 <p><span><a href="https://www.kaggle.com/leo1217/cp2020-hw2">https://www.kaggle.com/leo1217/cp2020-hw2</a></span></p>
-<h2 class="iYB33c" jsname="fek9E">二之二</h2>
-
+<h2>二之二</h2>
 <div class="iYB33c" jsname="fek9E"></div>
-<h2 class="iYB33c" jsname="fek9E">二之三</h2>
+<h2>二之三</h2>
 <p><span> </span></p>
+<p>試做整合</p>
+<p>import urllib.request<br/>target_url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"<br/>cp1b = []<br/>for line in urllib.request.urlopen(target_url):<br/>cp1b.append(int(line.decode('utf-8').rstrip()))<br/>from random import shuffle<br/>shuffle(cp1b)<br/>n = 5<br/>m = int(len(cp1b)/n)<br/>list2 = []<br/>for i in range(0,len(cp1b),m):<br/>list2.append(cp1b[i:i+m])<br/>print(list2)</p>
+<p><span>&gt;&gt;</span><span><span>&gt;</span></span>[[40923243, 40923250, 40923205, 40923245, 40923220, 40723217, 40728238, 40923208, 40923248, 40923209, 40923238], [40923240, 40923217, 40923201, 40923204, 40923212, 40923229, 40923219, 40923202, 40923227, 40923233, 40923234], [40923242, 40923211, 40923223, 40923231, 40923224, 40923207, 40923226, 40923253, 40823148, 40923232, 40923247], [40523148, 40523138, 40923213, 40923252, 40823152, 40923249, 40923228, 40923235, 40923218, 40923241, 40923206], [40923251, 40923239, 40923216, 40923203, 40923214, 40923237, 40923225, 40923230, 40923210, 40923244, 40923221], [40923236, 40923246]]</p>
+<p><br/><br/></p>
 <h1>wh3</h1>
-<br/><strong></strong> <br/><strong>Guessing G</strong><span><strong>ame One猜遊戲</strong> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/>Exercise 9 (and <a href="https://www.practicepython.org/solution/2014/04/10/09-guessing-game-one-solutions.html">Solution</a>)<br/><span>練習9（和</span><a href="https://www.practicepython.org/solution/2014/04/10/09-guessing-game-one-solutions.html"><span>解決方案</span></a><span>）</span>
+<p></p>
+<p><br/><strong>Guessing G</strong><span><strong>ame One猜遊戲</strong></span></p>
+<div class="g9WsWb"><span> </span>Exercise 9 (and <a href="https://www.practicepython.org/solution/2014/04/10/09-guessing-game-one-solutions.html">Solution</a>)<br/><span>練習9（和</span><a href="https://www.practicepython.org/solution/2014/04/10/09-guessing-game-one-solutions.html"><span>解決方案</span></a><span>）</span>
 <p>Generate a random number between 1 and 9 (including 1 and 9). Ask the user to guess the number, then tell them whether they guessed too low, too high, or exactly right. (<em>Hint: remember to use the user input lessons from the very<span> </span><a href="https://www.practicepython.org/exercise/2014/01/29/01-character-input.html">first exercise</a></em>)</p>
 <p><span>生成1到9之間的隨機數（包括1到9）。讓用戶猜測數字，然後告訴他們猜測的數字是否太低，太高或完全正確。（</span><em><span><span>提示：請記住在</span></span><a href="https://www.practicepython.org/exercise/2014/01/29/01-character-input.html"><span><span>第一次練習中</span></span></a></em><span><em><span>使用用戶輸入的課程</span></em><span>）</span></span></p>
 <p>Extras:</p>
@@ -426,7 +430,8 @@ while guess != number and guess != "exit":<span class="pl-k"><span>而</span></s
         print("And it only took you",count,"tries!")<span> </span><span class="pl-en"><span><span>打印</span></span></span><span><span>（</span></span><span class="pl-s"><span><span>“只花了你”</span></span></span><span><span>，</span></span><span class="pl-s1"><span><span>數數</span></span></span><span><span>，</span></span><span class="pl-s"><span><span>“嘗試！”</span></span></span><span><span>）</span></span></pre>
 <p><strong></strong></p>
 <p><br/><br/><strong></strong></p>
-<h2 class="iYB33c" jsname="fek9E">3List Less Than Ten列出少於十</h2>
+</div>
+<h2>3List Less Than Ten列出少於十</h2>
 <p>Take a list, say for example this one:</p>
 <figure class="highlight">
 <pre><code class="language-python" data-lang="python">  <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">89</span><span class="p">]</span></code></pre>
@@ -511,7 +516,7 @@ More Conditionals
 <p><br/><strong></strong></p>
 <p><span class="p"><span></span></span></p>
 <p><br/><br/><strong></strong></p>
-<h2 class="iYB33c" jsname="fek9E">21Write To A File  寫入文件</h2>
+<h2>21Write To A File  寫入文件</h2>
 <p><span><code class="highlighter-rouge">'r'</code><span><span> </span>and<span> </span></span><code class="highlighter-rouge">'w'</code><span>.<span> </span></span><code class="highlighter-rouge">'r'</code><span><span> </span>stands for “read only” and<span> </span></span><code class="highlighter-rouge">'w'</code><span><span> </span>stands for “write only” (you can open for both read and write using<span> </span></span><code class="highlighter-rouge">'r+'</code><span>)</span></span></p>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="Translation" dir="ltr"><span lang="zh-TW">“ r”和“ w”。 “ r”代表“只讀”，“ w”代表“僅寫”,<span>'r+'則是可以寫和讀<br/>open()是函數有兩個參數-第一個是文件作為一個字符串（如果文件不存在，Python將創建它）<br/>並表示第二個參數的名稱<span><span>文件應該如何被打開。</span></span><br/></span></span></pre>
 <div jsaction="iJE3Ge:yuFC7d;DmzWq:nuBux">
@@ -519,17 +524,16 @@ More Conditionals
   <span class="n">open_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">'A string to write'</span><span class="p">)寫入文字到文件</span>
   <span class="n">open_file</span><span class="o">.</span><span class="n">close</span><span class="p">()把打開的檔案關掉</span></code></pre>
 </div>
-<div jsaction="iJE3Ge:yuFC7d;DmzWq:nuBux">
 <pre></pre>
 Sample solution範例
-<pre>import requests
+<pre>import requests <span class="pl-k"><span>匯入</span></span><span> </span><span class="pl-s1"><span><span>要求</span></span></span>
 from bs4 import BeautifulSoup
  
 base_url = 'http://www.nytimes.com'
 r = requests.get(base_url)
 soup = BeautifulSoup(r.text)
 
-filename = input("File to save to: ")
+filename = input("File to save to: ")<span> </span><span class="pl-en"><span><span>輸入</span></span></span><span><span>（</span></span><span class="pl-s"><span><span>“要保存到的文件：”</span></span></span><span><span>）</span></span>
 
 with open(filename, 'w') as f:
   for story_heading in soup.find_all(class_="story-heading"): 
@@ -537,16 +541,44 @@ with open(filename, 'w') as f:
           f.write(story_heading.a.text.replace("\n", " ").strip())
       else: 
           f.write(story_heading.contents[0].strip())</pre>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="Translation" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span> </span></span></pre>
+</div>
+<div class="oSioSc"></div>
+<br/><br/>Decode A Web Page Two 
+<div class="oSioSc"><br/>Exercise 19 (and<span> </span><a href="https://www.practicepython.org/solution/2014/10/01/19-decode-a-web-page-two-solutions.html">Solution</a>)
+<p>Using the<span> </span><code class="highlighter-rouge">requests</code><span> </span>and<span> </span><code class="highlighter-rouge">BeautifulSoup</code><span> </span>Python libraries, print to the screen the full text of the article on this website:<span> </span><a href="http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture">http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture</a>.</p>
+<p>The article is long, so it is split up between 4 pages. Your task is to print out the text to the screen so that you can read the full article without having to click any buttons.</p>
+<p>(<em>Hint: The post<span> </span><a href="https://www.practicepython.org/solution/2014/07/10/17-decode-a-web-page-solutions.html">here</a><span> </span>describes in detail how to use the<span> </span><code class="highlighter-rouge">BeautifulSoup</code><span> </span>and<span> </span><code class="highlighter-rouge">requests</code><span> </span>libraries through the solution of the exercise posted<span> </span><a href="https://www.practicepython.org/exercise/2014/06/06/17-decode-a-web-page.html">here</a>.</em>)</p>
+<p>This will just print the full text of the article to the screen. It will not make it easy to read, so next exercise we will learn how to write this text to a<span> </span><code class="highlighter-rouge">.txt</code><span> </span>file.</p>
+<p><span>使用</span><code class="highlighter-rouge">requests</code><span>和</span><code class="highlighter-rouge">BeautifulSoup</code><span>Python庫，在此網站上將文章的全文打印到屏幕上：</span><a href="http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture"><span>http</span></a><span><span> </span>:<span> </span><a href="http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture">//www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture</a>。</span></p>
+<p><span><span>這篇文章很長，因此分為4頁。</span><span>您的任務是將文本打印到屏幕上，以便無需單擊任何按鈕即可閱讀全文。</span></span></p>
+<p><span><span>（</span></span><em><span><span>提示：</span></span><a href="https://www.practicepython.org/solution/2014/07/10/17-decode-a-web-page-solutions.html"><span><span>此處</span></span></a><span><span>的帖子</span><span>詳細介紹瞭如何</span><span>通過</span><a href="https://www.practicepython.org/exercise/2014/06/06/17-decode-a-web-page.html"><span>此處</span></a><span>發布的練習的解決方案</span><span>使用</span></span><code class="highlighter-rouge">BeautifulSoup</code><span><span>和</span></span><code class="highlighter-rouge">requests</code><span><span>庫</span><span>。</span></span><a href="https://www.practicepython.org/exercise/2014/06/06/17-decode-a-web-page.html"><span></span></a><span></span></em><span><span>）</span></span></p>
+Discussion
+<div jsaction="iJE3Ge:yuFC7d;DmzWq:nuBux">Inspecting HTML on a web page
+<p>If you have forgotten how to inspect the HTML of a web page, look at the<span> </span><a href="https://www.practicepython.org/exercise/2014/06/06/17-decode-a-web-page.html">detailed solution to the previous exercise</a><span> </span>for a very detailed explanation. In brief:</p>
+<ol>
+<li>Open the web page in Chrome.</li>
+<li>Right-click the page and click “Inspect Element”</li>
+<li>Use the magnifying glass on the bottom-left of the page to click on elements of the page and look at their properties </li>
+</ol>
+<p>解答</p>
+<pre>import requests
+from bs4 import BeautifulSoup
+
+base_url = "http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture"
+r = requests.get(base_url)
+soup = BeautifulSoup(r.text)
+
+all_p_cn_text_body = soup.select("div.parbase.cn_text &gt; div.body &gt; p")
+
+for elem in all_p_cn_text_body[7:]:
+  print(elem.text)</pre>
+</div>
 <h1>練習</h1>
 <p><span><a href="https://www.kaggle.com/leo1217/notebook-w2">https://www.kaggle.com/leo1217/notebook-w2</a></span></p>
 <p><span></span></p>
 <p><span> </span></p>
 <p></p>
 <p><span></span></p>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>

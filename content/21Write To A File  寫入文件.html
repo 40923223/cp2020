@@ -141,17 +141,16 @@ img.add_border {
   <span class="n">open_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">'A string to write'</span><span class="p">)寫入文字到文件</span>
   <span class="n">open_file</span><span class="o">.</span><span class="n">close</span><span class="p">()把打開的檔案關掉</span></code></pre>
 </div>
-<div jsaction="iJE3Ge:yuFC7d;DmzWq:nuBux">
 <pre></pre>
 Sample solution範例
-<pre>import requests
+<pre>import requests <span class="pl-k"><span>匯入</span></span><span> </span><span class="pl-s1"><span><span>要求</span></span></span>
 from bs4 import BeautifulSoup
  
 base_url = 'http://www.nytimes.com'
 r = requests.get(base_url)
 soup = BeautifulSoup(r.text)
 
-filename = input("File to save to: ")
+filename = input("File to save to: ")<span> </span><span class="pl-en"><span><span>輸入</span></span></span><span><span>（</span></span><span class="pl-s"><span><span>“要保存到的文件：”</span></span></span><span><span>）</span></span>
 
 with open(filename, 'w') as f:
   for story_heading in soup.find_all(class_="story-heading"): 
@@ -159,7 +158,39 @@ with open(filename, 'w') as f:
           f.write(story_heading.a.text.replace("\n", " ").strip())
       else: 
           f.write(story_heading.contents[0].strip())</pre>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="Translation" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span> </span></span></pre>
+</div>
+<div class="oSioSc"></div>
+<br/>19Decode A Web Page Two 
+<div class="oSioSc"></div>
+<div class="oSioSc"><br/>Exercise 19 (and<span> </span><a href="https://www.practicepython.org/solution/2014/10/01/19-decode-a-web-page-two-solutions.html">Solution</a>)
+<p>Using the<span> </span><code class="highlighter-rouge">requests</code><span> </span>and<span> </span><code class="highlighter-rouge">BeautifulSoup</code><span> </span>Python libraries, print to the screen the full text of the article on this website:<span> </span><a href="http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture">http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture</a>.</p>
+<p>The article is long, so it is split up between 4 pages. Your task is to print out the text to the screen so that you can read the full article without having to click any buttons.</p>
+<p>(<em>Hint: The post<span> </span><a href="https://www.practicepython.org/solution/2014/07/10/17-decode-a-web-page-solutions.html">here</a><span> </span>describes in detail how to use the<span> </span><code class="highlighter-rouge">BeautifulSoup</code><span> </span>and<span> </span><code class="highlighter-rouge">requests</code><span> </span>libraries through the solution of the exercise posted<span> </span><a href="https://www.practicepython.org/exercise/2014/06/06/17-decode-a-web-page.html">here</a>.</em>)</p>
+<p>This will just print the full text of the article to the screen. It will not make it easy to read, so next exercise we will learn how to write this text to a<span> </span><code class="highlighter-rouge">.txt</code><span> </span>file.</p>
+<p><span>使用</span><code class="highlighter-rouge">requests</code><span>和</span><code class="highlighter-rouge">BeautifulSoup</code><span>Python庫，在此網站上將文章的全文打印到屏幕上：</span><a href="http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture"><span>http</span></a><span><span> </span>:<span> </span><a href="http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture">//www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture</a>。</span></p>
+<p><span><span>這篇文章很長，因此分為4頁。</span><span>您的任務是將文本打印到屏幕上，以便無需單擊任何按鈕即可閱讀全文。</span></span></p>
+<p><span><span>（</span></span><em><span><span>提示：</span></span><a href="https://www.practicepython.org/solution/2014/07/10/17-decode-a-web-page-solutions.html"><span><span>此處</span></span></a><span><span>的帖子</span><span>詳細介紹瞭如何</span><span>通過</span><a href="https://www.practicepython.org/exercise/2014/06/06/17-decode-a-web-page.html"><span>此處</span></a><span>發布的練習的解決方案</span><span>使用</span></span><code class="highlighter-rouge">BeautifulSoup</code><span><span>和</span></span><code class="highlighter-rouge">requests</code><span><span>庫</span><span>。</span></span><a href="https://www.practicepython.org/exercise/2014/06/06/17-decode-a-web-page.html"><span></span></a><span></span></em><span><span>）</span></span></p>
+Discussion
+<div jsaction="iJE3Ge:yuFC7d;DmzWq:nuBux">Inspecting HTML on a web page
+<p>If you have forgotten how to inspect the HTML of a web page, look at the<span> </span><a href="https://www.practicepython.org/exercise/2014/06/06/17-decode-a-web-page.html">detailed solution to the previous exercise</a><span> </span>for a very detailed explanation. In brief:</p>
+<ol>
+<li>Open the web page in Chrome.</li>
+<li>Right-click the page and click “Inspect Element”</li>
+<li>Use the magnifying glass on the bottom-left of the page to click on elements of the page and look at their properties </li>
+</ol>
+<p>解答</p>
+<pre>import requests
+from bs4 import BeautifulSoup
+
+base_url = "http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture"
+r = requests.get(base_url)
+soup = BeautifulSoup(r.text)
+
+all_p_cn_text_body = soup.select("div.parbase.cn_text &gt; div.body &gt; p")
+
+for elem in all_p_cn_text_body[7:]:
+  print(elem.text)</pre>
+</div>
 <br />3List Less Than Ten列出少於十 << <a href='3List Less Than Ten列出少於十.html'>Previous</a> <a href='練習.html'>Next</a> >> 練習</div>
         
     <!-- footer -->
