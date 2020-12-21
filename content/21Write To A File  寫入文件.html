@@ -133,25 +133,34 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">21Write To A File  寫入文件 << <a href='21Write To A File  寫入文件.html'>Previous</a> <br /><h1>練習</h1>
-<p><span><a href="https://www.kaggle.com/leo1217/notebook-w2">https://www.kaggle.com/leo1217/notebook-w2</a></span></p>
-<p><span></span></p>
-<p><span> </span></p>
-<p></p>
-<p><span></span></p>
+    <div id="tipue_search_content">3List Less Than Ten列出少於十 << <a href='3List Less Than Ten列出少於十.html'>Previous</a> <a href='練習.html'>Next</a> >> 練習<br /><h1>21Write To A File  寫入文件</h1>
+<p><span><code class="highlighter-rouge">'r'</code><span><span> </span>and<span> </span></span><code class="highlighter-rouge">'w'</code><span>.<span> </span></span><code class="highlighter-rouge">'r'</code><span><span> </span>stands for “read only” and<span> </span></span><code class="highlighter-rouge">'w'</code><span><span> </span>stands for “write only” (you can open for both read and write using<span> </span></span><code class="highlighter-rouge">'r+'</code><span>)</span></span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="Translation" dir="ltr"><span lang="zh-TW">“ r”和“ w”。 “ r”代表“只讀”，“ w”代表“僅寫”,<span>'r+'則是可以寫和讀<br/>open()是函數有兩個參數-第一個是文件作為一個字符串（如果文件不存在，Python將創建它）<br/>並表示第二個參數的名稱<span><span>文件應該如何被打開。</span></span><br/></span></span></pre>
+<div jsaction="iJE3Ge:yuFC7d;DmzWq:nuBux">
+<pre><code class="language-python" data-lang="python">  <span class="n">open_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'file_to_save.txt'</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)儲存文件 用寫入的方式</span>
+  <span class="n">open_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">'A string to write'</span><span class="p">)寫入文字到文件</span>
+  <span class="n">open_file</span><span class="o">.</span><span class="n">close</span><span class="p">()把打開的檔案關掉</span></code></pre>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><br />21Write To A File  寫入文件 << <a href='21Write To A File  寫入文件.html'>Previous</a> </div>
+<div jsaction="iJE3Ge:yuFC7d;DmzWq:nuBux">
+<pre></pre>
+Sample solution範例
+<pre>import requests
+from bs4 import BeautifulSoup
+ 
+base_url = 'http://www.nytimes.com'
+r = requests.get(base_url)
+soup = BeautifulSoup(r.text)
+
+filename = input("File to save to: ")
+
+with open(filename, 'w') as f:
+  for story_heading in soup.find_all(class_="story-heading"): 
+      if story_heading.a: 
+          f.write(story_heading.a.text.replace("\n", " ").strip())
+      else: 
+          f.write(story_heading.contents[0].strip())</pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="Translation" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span> </span></span></pre>
+<br />3List Less Than Ten列出少於十 << <a href='3List Less Than Ten列出少於十.html'>Previous</a> <a href='練習.html'>Next</a> >> 練習</div>
         
     <!-- footer -->
       <div class="container">
