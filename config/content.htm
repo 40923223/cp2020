@@ -342,11 +342,27 @@
 <div class="iYB33c" jsname="fek9E"></div>
 <h2>二之三</h2>
 <p><span> </span></p>
-<p>試做整合</p>
-<p>import urllib.request<br/>target_url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"<br/>cp1b = []<br/>for line in urllib.request.urlopen(target_url):<br/>cp1b.append(int(line.decode('utf-8').rstrip()))<br/>from random import shuffle<br/>shuffle(cp1b)<br/>n = 5<br/>m = int(len(cp1b)/n)<br/>list2 = []<br/>for i in range(0,len(cp1b),m):<br/>list2.append(cp1b[i:i+m])<br/>print(list2)</p>
-<p><span>&gt;&gt;</span><span><span>&gt;</span></span>[[40923243, 40923250, 40923205, 40923245, 40923220, 40723217, 40728238, 40923208, 40923248, 40923209, 40923238], [40923240, 40923217, 40923201, 40923204, 40923212, 40923229, 40923219, 40923202, 40923227, 40923233, 40923234], [40923242, 40923211, 40923223, 40923231, 40923224, 40923207, 40923226, 40923253, 40823148, 40923232, 40923247], [40523148, 40523138, 40923213, 40923252, 40823152, 40923249, 40923228, 40923235, 40923218, 40923241, 40923206], [40923251, 40923239, 40923216, 40923203, 40923214, 40923237, 40923225, 40923230, 40923210, 40923244, 40923221], [40923236, 40923246]]</p>
+<p>試作整合</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import urllib.request
+target_url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"
+cp1b = []
+for line in urllib.request.urlopen(target_url):
+cp1b.append(int(line.decode('utf-8').rstrip()))
+from random import shuffle
+shuffle(cp1b)
+n = 5
+m = int(len(cp1b)/n)
+list2 = []
+for i in range(0,len(cp1b),m):
+list2.append(cp1b[i:i+m])
+print(list2)
+
+&gt;&gt;&gt;[[40923243, 40923250, 40923205, 40923245, 40923220, 40723217, 40728238, 40923208, 40923248, 40923209, 40923238], [40923240, 40923217, 40923201, 40923204, 40923212, 40923229, 40923219, 40923202, 40923227, 40923233, 40923234], [40923242, 40923211, 40923223, 40923231, 40923224, 40923207, 40923226, 40923253, 40823148, 40923232, 40923247], [40523148, 40523138, 40923213, 40923252, 40823152, 40923249, 40923228, 40923235, 40923218, 40923241, 40923206], [40923251, 40923239, 40923216, 40923203, 40923214, 40923237, 40923225, 40923230, 40923210, 40923244, 40923221], [40923236, 40923246]]
+
+
+</pre>
 <p><br/><br/></p>
-<h1>wh3</h1>
+<p></p><h1>wh3</h1>
 <p></p>
 <p><br/><strong>Guessing G</strong><span><strong>ame One猜遊戲</strong></span></p>
 <div class="g9WsWb"><span> </span>Exercise 9 (and <a href="https://www.practicepython.org/solution/2014/04/10/09-guessing-game-one-solutions.html">Solution</a>)<br/><span>練習9（和</span><a href="https://www.practicepython.org/solution/2014/04/10/09-guessing-game-one-solutions.html"><span>解決方案</span></a><span>）</span>
@@ -430,7 +446,7 @@ while guess != number and guess != "exit":<span class="pl-k"><span>而</span></s
         print("And it only took you",count,"tries!")<span> </span><span class="pl-en"><span><span>打印</span></span></span><span><span>（</span></span><span class="pl-s"><span><span>“只花了你”</span></span></span><span><span>，</span></span><span class="pl-s1"><span><span>數數</span></span></span><span><span>，</span></span><span class="pl-s"><span><span>“嘗試！”</span></span></span><span><span>）</span></span></pre>
 <p><strong></strong></p>
 <p><br/><br/><strong></strong></p>
-</div>
+</div></div></div></div></div></div></div></div></div></div></div>
 <h2>3List Less Than Ten列出少於十</h2>
 <p>Take a list, say for example this one:</p>
 <figure class="highlight">
@@ -541,7 +557,6 @@ with open(filename, 'w') as f:
           f.write(story_heading.a.text.replace("\n", " ").strip())
       else: 
           f.write(story_heading.contents[0].strip())</pre>
-</div>
 <div class="oSioSc"></div>
 <br/>19  Decode A Web Page Two 
 <div class="oSioSc"></div>
@@ -576,19 +591,9 @@ for elem in all_p_cn_text_body[7:]:
 </div>
 <h1>練習</h1>
 <p><span><a href="https://www.kaggle.com/leo1217/notebook-w2">https://www.kaggle.com/leo1217/notebook-w2</a></span></p>
-<p><span>老失當我</span></p>
+<p><span> </span></p>
 <p><span> </span></p>
 <p><span></span></p>
 <p><span> </span></p>
 <p></p>
-<p><span></span></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<p><span></span></p></div>
