@@ -572,11 +572,52 @@ soup = BeautifulSoup(r.text)
 all_p_cn_text_body = soup.select("div.parbase.cn_text &gt; div.body &gt; p")
 
 for elem in all_p_cn_text_body[7:]:
-  print(elem.text)</pre>
+  print(elem.text)<br/><br/></pre>
+<br/>Decode A Web Page Two<span>  </span>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">解碼網頁二</span></pre>
+<div><i></i></div>
+<h2 id="exercise-19-and-solution">Exercise 19</h2>
+<p>Using the<span> </span><code class="highlighter-rouge">requests</code><span> </span>and<span> </span><code class="highlighter-rouge">BeautifulSoup</code><span> </span>Python libraries, print to the screen the full text of the article on this website:<span> </span><a href="http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture">http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture</a>.</p>
+<p>The article is long, so it is split up between 4 pages. Your task is to print out the text to the screen so that you can read the full article without having to click any buttons.</p>
+<p>(<em>Hint: The post<span> </span><a href="https://www.practicepython.org/solution/2014/07/10/17-decode-a-web-page-solutions.html">here</a><span> </span>describes in detail how to use the<span> </span><code class="highlighter-rouge">BeautifulSoup</code><span> </span>and<span> </span><code class="highlighter-rouge">requests</code><span> </span>libraries through the solution of the exercise posted<span> </span><a href="https://www.practicepython.org/exercise/2014/06/06/17-decode-a-web-page.html">here</a>.</em>)</p>
+<p>This will just print the full text of the article to the screen. It will not make it easy to read, so next exercise we will learn how to write this text to a<span> </span><code class="highlighter-rouge">.txt</code><span> </span>file.</p>
+<p>使用請求和BeautifulSoup Python庫，將以下網站上文章的全文打印到屏幕上：http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture。</p>
+<p>這篇文章很長，因此分為4頁。您的任務是將文本打印到屏幕上，以便無需單擊任何按鈕即可閱讀全文。</p>
+<p>（提示：此處的帖子詳細描述瞭如何使用BeautifulSoup，並通過此處發布的練習的解決方案來請求庫。）</p>
+<p>這只會將文章的全文打印到屏幕上。它不會使其易於閱讀，因此在下一個練習中，我們將學習如何將此文本寫入.txt文件。</p>
+<h2 id="discussion">Discussion</h2>
+<h3 id="inspecting-html-on-a-web-page">Inspecting HTML on a web page</h3>
+<p>If you have forgotten how to inspect the HTML of a web page, look at the<span> </span><a href="https://www.practicepython.org/exercise/2014/06/06/17-decode-a-web-page.html">detailed solution to the previous exercise</a><span> </span>for a very detailed explanation. In brief:</p>
+<ol>
+<li>Open the web page in Chrome.</li>
+<li>Right-click the page and click “Inspect Element”</li>
+<li>Use the magnifying glass on the bottom-left of the page to click on elements of the page and look at their properties.</li>
+</ol>
+<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">如果您忘記瞭如何檢查網頁的HTML，請查看上一個練習的詳細解決方案，以獲取非常詳細的說明。簡單來說：
+
+在Chrome中打開網頁。
+右鍵單擊頁面，然後單擊“檢查元素”
+使用頁面左下方的放大鏡單擊頁面元素並查看其屬性</span></pre>
+</div>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container">解法</div>
+<div class="tw-ta-container hide-focus-ring tw-nfl">
+<pre>import requests
+from bs4 import BeautifulSoup
+
+base_url = "http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture"
+r = requests.get(base_url)
+soup = BeautifulSoup(r.text)
+
+all_p_cn_text_body = soup.select("div.parbase.cn_text &gt; div.body &gt; p")
+
+for elem in all_p_cn_text_body[7:]:
+  print(elem.text</pre>
+</div>
 </div>
 <h1>練習</h1>
 <p><span><a href="https://www.kaggle.com/leo1217/notebook-w2">https://www.kaggle.com/leo1217/notebook-w2</a></span></p>
-<p><span>老失當我</span></p>
 <p><span> </span></p>
 <p><span></span></p>
 <p><span> </span></p>
